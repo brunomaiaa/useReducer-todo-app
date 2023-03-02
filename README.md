@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Todo App using useReducer from React
+====================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple todo app built using React's useReducer hook. The app allows users to add and track their todos.
 
-## Available Scripts
+This project uses the following React concepts:
+-----------------
 
-In the project directory, you can run:
 
-### `npm start`
+1.  Components: The project is built using multiple functional components, which are reusable and easy to read.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.  JSX: JSX is used to write HTML-like syntax within JavaScript code. This is used to render the UI of the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.  Props: The parent component (App) passes down props to child components (TodoForm and TodoList) to share data between them.
 
-### `npm test`
+4.  State: State is used to keep track of the user's input in TodoForm and the todos list in TodoList. useState hook is used to manage state.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5.  useContext Hook: The useContext hook is used to share the application state across all components.
 
-### `npm run build`
+6.  useReducer Hook: The useReducer hook is used to manage the application's state changes through dispatched actions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7.  Context API: The Context API is used to provide a global state to all components in the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8.  Reducers: A reducer function is used to handle dispatched actions in the context's state. It receives the current state and an action, and returns the new state.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+9.  CSS: Styling is done using CSS, and the classNames are used to apply these styles to the components.
 
-### `npm run eject`
+Overall, the app utilizes React's core concepts to build a simple todo app using the useReducer hook for state management and Context API to share the application state across all components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Structure
+-----------------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project consists of the following files and folders:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   `App.js`: The main component that renders the todo app.
+-   `App.css`: The CSS styles for the App component.
+-   `components/`: A folder that contains the TodoForm, TodoList, and Todo components.
+-   `context/`: A folder that contains the TodoContext and TodoReducer files.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Author
+-------
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Bruno Maia
