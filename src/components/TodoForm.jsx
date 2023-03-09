@@ -5,7 +5,7 @@ import { addTodo } from "../context/TodoReducer";
 
 export default function TodoForm() {
   //get the dispatch from our context.
-  const {dispatch} = useContext(TodoContext);
+  const {state,dispatch} = useContext(TodoContext);
   //keep track of what's typed inside the input 
   const [currentTodo, setCurrentTodo] = useState("");
 
@@ -18,6 +18,10 @@ export default function TodoForm() {
      }
      //dispatch the addTodo action with the new object
      dispatch(addTodo(newTodoItem))
+
+     console.log("the current state");
+      //the above line results in the below:
+    //  dispatch({type:'ADD_TODO', payload:newTodoItem})
   }
 
   return (

@@ -7,14 +7,15 @@ import TodoProvider from './context/TodoContext';
 
 function App() {
   return (
+    <TodoProvider>
     <div className="App">
-      <TodoProvider>
+      
       <h1>To Do App</h1>
       <TodoForm/>
-      <TodoList/>
 
-      </TodoProvider>
+      <TodoList/>
     </div>
+    </TodoProvider>
   );
 }
 
